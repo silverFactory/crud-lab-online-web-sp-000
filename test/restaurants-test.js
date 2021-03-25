@@ -29,7 +29,7 @@ describe('RestaurantInput', () => {
     input.simulate('change', { target: { value: 'Hello', name: 'text', id: 'text' } });
     expect(wrapper.state('text')).to.equal('Hello');
   });
-
+ 
   it('updates the state of the store after submitting the form', () => {
     const store = createStore(manageRestaurant);
     const wrapper = mount(<Provider store={store}><App /></Provider>);

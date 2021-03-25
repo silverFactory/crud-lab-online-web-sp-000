@@ -110,7 +110,7 @@ describe('Reviews Component', () => {
     const wrapper = mount(<Provider store={store}><App /></Provider>);
 
     expect(wrapper.find(ReviewsContainer).html()).to.include(wrapper.find(Reviews).html())
-  });
+  }); 
 
   it('displays a review for when it is associated with the restaurant', () => {
     const store = createStore(manageRestaurant);
